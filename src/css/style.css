@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.widget-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards,
+.widget-form,
+.form-group {
+    display: block;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.card-input,
+.validate-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.validate-button {
+    background-color: #0daf4b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.validate-button:hover {
+    background-color: #040506;
+}
+
+.image-container img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.image-container img.active {
+    filter: grayscale(0%);
+    opacity: 1;
+}
